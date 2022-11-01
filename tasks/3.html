@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>Скрипник ПІ 19-01</title>
+</head>
+<body>
+    <p id="Text"></p>
+    <script>
+const text = "ПІ 19-01, Скрипник Роман".split("");
+const output = document.getElementById("Text");
+let i = 0;
+let Interval = setInterval(() => { output.textContent = output.textContent + text[i];i++; }, 500);
+setTimeout(() => {clearInterval(Interval);}, text.length * 500);
+ </script>
+</body>
+</html>
